@@ -5,11 +5,10 @@
   font-family: 'PT Sans', sans-serif;
 }
 
-.home,
-.Project,
+.Home,
+.Projects,
 
-.Project {
-  background-image: url('../public/images/homepage.jpg');
+.Projects {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
