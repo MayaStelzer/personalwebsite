@@ -8,41 +8,23 @@ function Footer() {
             <div className='footer-links'>
                 <div className='footer-link-wrapper'>
                     <div className='footer-link-items'>
-                        <h2>About Me</h2>
-                            <Link to='/'>Projects</Link>
-                            <Link to='/'>About</Link>
+                        <h2>Go To</h2>
+                            <Link to='/'>Home</Link>
+                            <Link to='/Projects'>Projects</Link>
+                            <Link to='/About'>About</Link>
                     </div>
                     <div className='footer-link-items'>
                         <h2>Social Media</h2>
-                            <Link to='/'>Linkedin</Link>
-                            <Link to='/'>GitHub</Link>
+                            <a href='https://www.linkedin.com/in/mayastelzer'
+                            target='_blank'>LinkedIn<i className="fab fa-linkedin"></i></a>
+                            <a href='https://github.com/MayaStelzer'
+                            target='_blank'>GitHub<i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
             <section className='social-media'>
                 <div className='social-media-wrap'>
-                    <div className='footer-logo'>
-                        <Link to='/' className='social-logo'>
-                            MAYA <i className='fab fa-type-typo3' />
-                        </Link>
-                    </div>
                     <small className='website-rights'>Maya Stelzer 2023</small>
-                    <div className='social-icons'>
-                        <Link className='social-icon-link Linkedin'
-                        to='/'
-                        target='blank'
-                        aria-label="Linkedin"
-                        >
-                            <i className="fa-brands fa-linkedin"></i>
-                        </Link>
-                        <Link className='social-icon-link GitHub'
-                        to='/'
-                        target='blank'
-                        aria-label="GitHub"
-                        >
-                            <i class="fa-brands fa-github"></i>
-                        </Link>
-                    </div>
                 </div>
             </section>
         </div>

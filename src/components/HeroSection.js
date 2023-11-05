@@ -5,7 +5,7 @@ import '../App.css'
 function HeroSection() {
     return (
         <div className='hero-container'>
-            <h1>Hello and Welcome</h1>
+            <h1>Hello and Welcome!</h1>
         </div>
     )
 }

@@ -25,7 +25,7 @@ function Navbar() {
             <nav className='navbar'>
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo'>
-                        MAYA 
+                        Maya Stelzer
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -37,12 +37,12 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/projects' className='nav-links' onClick={closeMolbileMenu}>
+                            <Link to='/Projects' className='nav-links' onClick={closeMolbileMenu}>
                                 Projects
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/about' className='nav-links' onClick={closeMolbileMenu}>
+                            <Link to='/About' className='nav-links' onClick={closeMolbileMenu}>
                                 About
                             </Link>
                         </li>
