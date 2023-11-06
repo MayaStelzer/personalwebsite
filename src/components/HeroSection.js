@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import './HeroSection.css';
 import '../App.css'
-import Typewriter from 'typewriter-effect'
 
 function HeroSection() {
     const [text, setText] = useState('');
