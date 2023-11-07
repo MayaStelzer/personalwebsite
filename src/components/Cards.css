@@ -55,13 +55,17 @@ h1 {
 
 .cards__item__text {
   align-items: center;
-  padding-bottom: 10px;
+  padding-bottom: 4px;
+  color: #252e48;
+  font-size: 24px;
+  line-height: 24px;
 }
 
 .cards__item__description {
   display: flex;
   align-self: left;
   color: #242424;
+  font-size: 18px;
 }
 
 .cards__item__pic-wrap {
@@ -101,12 +105,6 @@ h1 {
   padding: 20px 30px 30px;
 }
 
-.cards__item__text {
-  color: #252e48;
-  font-size: 18px;
-  line-height: 24px;
-}
-
 @media only screen and (min-width: 1200px) {
   .content__blog__container {
     width: 84%;
@@ -125,6 +123,6 @@ h1 {
   }
 
   .cards__item__description {
-    font-size: 14px;
+    font-size: 16px;
   }
 }

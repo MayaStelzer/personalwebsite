@@ -1,8 +1,32 @@
 .profile__pic {
-    display: flex;
     position: relative;
-    max-width: 100%;
-    width: 100%;
     overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
     height: auto;
+    display: flex;
+}
+
+.profile__content {
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.profile {
+    padding: 4rem;
+    background: #fff;
+    margin-bottom: 24px;
+    display: flex;
+    flex: 1;
+    margin: 0 1rem;
+    border-radius: 10px;
+    position: relative;
+    max-height: 600px;
+}
+
+@media (max-width: 768px) {
+    .profile__pic {
+        width: 50%;
+        height: auto;
+    }
 }
