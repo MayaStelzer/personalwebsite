@@ -8,7 +8,7 @@ function AboutSection() {
         <div className='profile'>
             <figure className='profile__pic'>
                 <img 
-                    src='/images/profile.jpg'
+                    src='images/profile.JPG'
                     alt='Profile Picture'
                 />
             </figure>
