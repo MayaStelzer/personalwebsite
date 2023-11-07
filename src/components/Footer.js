@@ -9,9 +9,9 @@ function Footer() {
                 <div className='footer-link-wrapper'>
                     <div className='footer-link-items'>
                         <h2>Go To</h2>
-                            <Link to='/'>Home</Link>
-                            <Link to='/Projects'>Projects</Link>
-                            <Link to='/About'>About</Link>
+                            <Link to='/personalwebsite/'>Home</Link>
+                            <Link to='/personalwebsite/Projects'>Projects</Link>
+                            <Link to='/personalwebsite/About'>About</Link>
                     </div>
                     <div className='footer-link-items'>
                         <h2>Social Media</h2>

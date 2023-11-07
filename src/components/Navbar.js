@@ -32,17 +32,17 @@ function Navbar() {
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMolbileMenu}>
+                            <Link to='/personalwebsite' className='nav-links' onClick={closeMolbileMenu}>
                                 Home
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/Projects' className='nav-links' onClick={closeMolbileMenu}>
+                            <Link to='/personalwebsite/Projects' className='nav-links' onClick={closeMolbileMenu}>
                                 Projects
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/About' className='nav-links' onClick={closeMolbileMenu}>
+                            <Link to='/personalwebsite/About' className='nav-links' onClick={closeMolbileMenu}>
                                 About
                             </Link>
                         </li>
