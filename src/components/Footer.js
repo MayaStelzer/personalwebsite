@@ -16,9 +16,10 @@ function Footer() {
                     <div className='footer-link-items'>
                         <h2>Social Media</h2>
                             <a href='https://www.linkedin.com/in/mayastelzer'
-                            target='_blank'>LinkedIn<i className="fab fa-linkedin"></i></a>
+                            target='_blank'rel="noopener noreferrer"
+                            >LinkedIn<i className="fab fa-linkedin"></i></a>
                             <a href='https://github.com/MayaStelzer'
-                            target='_blank'>GitHub<i class="fab fa-github"></i></a>
+                            target='_blank'rel="noopener noreferrer">GitHub<i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>

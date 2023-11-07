@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 
 function CardItems(props) {
     return (
@@ -17,7 +16,7 @@ function CardItems(props) {
                     <div className='cards__item__info'>
                         <h5 className='cards__item__text'>{props.text}</h5>
                         <a href={props.details}
-                        target='_blank'>www.staging.slalomcolumn.com/<i className='cards__item__description'></i></a>                        
+                        target='_blank'rel="noopener noreferrer">www.staging.slalomcolumn.com/<i className='cards__item__description'></i></a>                        
                         <p className='cards__item__description'>{props.info}</p>
                     </div>
                 </div>                
