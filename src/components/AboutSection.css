@@ -1,4 +1,16 @@
-.profile__pic {
+.profile {
+    padding: 4rem;
+    background: #fff;
+    margin-bottom: 24px;
+    display: flex;
+    flex: 1;
+    margin: 0 1rem;
+    border-radius: 10px;
+    position: relative;
+    max-height: 600px;
+}
+
+.profile__pics {
     position: relative;
     overflow: hidden;
     max-width: 100%;
@@ -12,17 +24,30 @@
     overflow: hidden;
 }
 
-.profile {
-    padding: 4rem;
-    background: #fff;
-    margin-bottom: 24px;
+.slide-panel {
     display: flex;
-    flex: 1;
-    margin: 0 1rem;
-    border-radius: 10px;
-    position: relative;
-    max-height: 600px;
+    align-items: left;
+    width: 25em;
+    height: auto;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
+
+.prev, .next {
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.25s;
+}
+
+.prev:hover, .next:hover {
+    transform: scale(1.25);
+}
+
 
 @media (max-width: 768px) {
     .profile__pic {
