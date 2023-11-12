@@ -10,7 +10,7 @@ function Cards() {
                 <div className="cards__wrapper">
                     <ul className="cards__items">
                         <CardItem
-                        src="../images/blog.jpg"
+                        src='/../images/blog.jpg'
                         text="React Ski/Snowboard Blog"
                         details="https://staging.slalomcolumn.com/"
                         info="A full-stack ski/snowboard blog website, created using ReactJS and PostgreSQL. Content written by my older sibling, which I entered into a SQL database to be queried by the website. 

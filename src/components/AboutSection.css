@@ -1,57 +1,48 @@
-.profile {
-    padding: 4rem;
-    background: #fff;
-    margin-bottom: 24px;
+.slider {
+    position: relative;
+    height: 100vh;
     display: flex;
-    flex: 1;
-    margin: 0 1rem;
+    justify-content: left;
+    align-items: center;
+    max-width: 70%;
+    width: 100%;
+    margin: 50px 0 45px;
+}
+
+.image {
+    display: flex;
+    width: 1000px;
+    height: auto;
     border-radius: 10px;
-    position: relative;
-    max-height: 600px;
 }
 
-.profile__pics {
-    position: relative;
-    overflow: hidden;
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    display: flex;
-}
-
-.profile__content {
-    font-size: 16px;
-    overflow: hidden;
-}
-
-.slide-panel {
-    display: flex;
-    align-items: left;
-    width: 25em;
-    height: auto;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-}
-
-.prev, .next {
-    width: 2em;
-    height: 2em;
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;
+    right: 32px;
+    z-index: 10;
     cursor: pointer;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: 0.25s;
+    user-select: none;
 }
 
-.prev:hover, .next:hover {
-    transform: scale(1.25);
+.left-arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;
+    left: 32px;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
 }
 
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+}
 
-@media (max-width: 768px) {
-    .profile__pic {
-        width: 50%;
-        height: auto;
-    }
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
 }
