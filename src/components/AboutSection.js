@@ -1,35 +1,31 @@
 import React, {useState} from 'react'
 import './AboutSection.css';
-import {ImageData} from './data/ImageData'
 
-const AboutSection = ({slides}) => {
-    const[current, setCurrent] = useState(0);
-    const length = slides.length;
-
-    const nextSlide = () => {
-        setCurrent(current === length - 1 ? 0 : current + 1);
+export function AboutSection({ imageUrls }) {
+    const [imageIndex, setImageIndex] = useState(0);
+  
+    const nextImage = () => {
+      setImageIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
     };
-    const prevSlide = () => {
-        setCurrent(current === 0 ? length - 1 : current - 1);
-    }
-    if (!Array.isArray(slides) || slides.length <= 0) {
-        return null;
-    }
-
+  
+    const prevImage = () => {
+      setImageIndex((prevIndex) =>
+        prevIndex === 0 ? imageUrls.length - 1 : prevIndex - 1
+      );
+    };
+  
     return (
-        <section className="slider">
-            <div className='left-arrow' onClick={prevSlide}><i class="fas fa-chevron-left"/></div>
-            <div className='right-arrow' onClick={nextSlide}><i class="fas fa-chevron-right"/></div>
-            {ImageData.map((slide, index) => {
-                return (
-                    <div className={index === current ? 'slide active' : 'slide'} key={index}>
-                       {index === current && (
-                        <img src={slide.image} alt='profile image' className='image' />
-                       )}
-                    </div>
-                );
-            })}
-        </section>
+      <div classname="about-section-container">
+        <div className='profile-content'>
+            <p>Hi, my name is Maya Stelzer. I am a current student at Gonzaga Univeristy, studying Computer Science.</p>
+        </div>
+        <div className="profile-images">
+            <div className='left-arrow' onClick={prevImage}><i class="fas fa-chevron-left"/></div>
+            <div className='right-arrow' onClick={nextImage}><i class="fas fa-chevron-right"/></div>
+            <img src={imageUrls[imageIndex]} className='images'/>
+        </div>
+      </div>
     );
-};
-export default AboutSection;
+  }
+
+  export default AboutSection;
