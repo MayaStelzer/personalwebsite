@@ -1,5 +1,8 @@
 import React, {useState} from 'react'
 import './AboutSection.css';
+import resume from '../images/resume.pdf'
+import { Button } from './Button';
+
 
 export function AboutSection({ imageUrls }) {
     const [imageIndex, setImageIndex] = useState(0);
@@ -30,6 +33,11 @@ export function AboutSection({ imageUrls }) {
                     I began this website during a hackathon, and I have continued to design and add features while learning more about React and HTML/CSS. I am 
                     interested in Software Development and AI/Machine Learning. Outside of school, I enjoy working out, rock climbing, hiking, and snowboarding.
                     </p>
+                    <div className='btn'>
+                        <a href="MayaStelzerResume.pdf" download="MayaStelzerResume.pdf">
+                        <button className='resume__button'>Resume</button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
