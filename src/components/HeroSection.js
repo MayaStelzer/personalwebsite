@@ -25,7 +25,7 @@ function HeroSection() {
 
     return (
         <div className='hero-container'>
-            <h1>{text}</h1>
+            <h1 className='custom-font'>{text}</h1>
         </div>
     )
 }

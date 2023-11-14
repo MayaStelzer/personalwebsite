@@ -1,16 +1,17 @@
 import React from 'react'
 import CardItem from './CardItems'
 import './Cards.css';
+import image1 from '../images/blog.jpg'
 
 function Cards() {
     return (
         <div className='cards'>
-            <h1>Take a look at my projects!</h1>
+            <h1 className='project__title'>Take a look at my projects!</h1>
             <div className="cards__container">
                 <div className="cards__wrapper">
                     <ul className="cards__items">
                         <CardItem
-                        src="images/blog.jpg"
+                        src={image1}
                         text="React Ski/Snowboard Blog"
                         details="https://staging.slalomcolumn.com/"
                         info="A full-stack ski/snowboard blog website, created using ReactJS and PostgreSQL. Content written by my older sibling, which I entered into a SQL database to be queried by the website. 
